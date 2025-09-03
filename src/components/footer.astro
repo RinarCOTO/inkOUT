@@ -3,6 +3,8 @@ import FooterLogo from '../assets/images/InkOutFooter.svg'
 import FacebookLogo from '../assets/images/FacebookLogo.svg'
 import InstagramLogo from '../assets/images/InstagramLogo.svg'
 import XLogo from '../assets/images/XLogo.svg'
+import ChevronDown from '../assets/images/ChevronDown.svg'
+import GototopButton from '../components/GototopButton.astro'
 ---
 <style>
 .custom-shadow {
@@ -14,11 +16,11 @@ import XLogo from '../assets/images/XLogo.svg'
 
 </style>
 <footer class="p-[40px]">
-    <section class="pt-[100px] px-[123px] flex flex-col bg-[#E5FBFF] rounded-[30px] pb-8">
-        <div class="flex space-x-[100px]">
+    <section class="pt-[100px] flex flex-col bg-[#E5FBFF] rounded-[30px] pb-8">
+        <div class="flex space-x-[100px] px-[123px]">
         <div class="max-w-[676px] space-y-[20px]">
             <img src={FooterLogo.src} alt="">
-            <p class="font-roboto leading-6">inkOUT is real, safe and natural tattoo removal that triggers the body’s healing processes to expel the tattoo ink out of it in the form of a scab. Real results. Safe from mutated ink fragments. A natural process your body will appreciate.</p>
+            <p class="leading-6 font-roboto-16">inkOUT is real, safe and natural tattoo removal that triggers the body’s healing processes to expel the tattoo ink out of it in the form of a scab. Real results. Safe from mutated ink fragments. A natural process your body will appreciate.</p>
             <div class="flex space-x-[10px]">
                 <div class="w-9 h-9 rounded-full bg-[#EDFCFF]/70 border border-black/5 
                             flex items-center justify-center 
@@ -39,27 +41,36 @@ import XLogo from '../assets/images/XLogo.svg'
 
 
         </div>
-        <div class="flex flex-col gap-[30px] mt-[61.69px]">
+        <div class="flex flex-col gap-[30px] mt-[61.69px] font-roboto-16">
             <a href="">About Us</a>
             <a href="">Contact Us</a>
             <a href="">Find a Location</a >
             <a href="">Citation</a >
         </div>
-        <div class="flex flex-col space-y-[30px] mt-[61.69px]">
+        <div class="flex flex-col space-y-[30px] mt-[61.69px] font-roboto-16">
             <a href="">How does it work</a>
             <a href="">Member Login</a>
             <a href="">Privacy Login</a>
         </div>
         </div>
-        <div class="flex justify-between mt-[62px]">
-            <div>Copyright © 2025 inkOUT</div>
-            <div>
-                <div class="flex">
-                    <a href="" class="pr-4">Terms of Service</a>
-                    <a href="" class="px-4 border-x-1">Privacy Policy</a>
-                    <a href="" class="pl-4">English</a>
-                </div>
-            </div>
-        </div>
+<hr class="border-t border-white mt-[30px]">
+<div class="flex mt-[62px] items-center text-[14px] font-roboto">
+  <div class="ml-[100px]">Copyright © 2025 inkOUT</div>
+  <div class="flex ml-[659px]">
+    <a href="" class="pr-4">Terms of Service</a>
+    <a href="" class="px-4 border-x border-black/20">Privacy Policy</a>
+    <a href="" class="pl-4">English <button class="ml-[19px]"><img src={ChevronDown.src} alt=""></button></a>
+  </div>
+      <!-- Desktop version: inline -->
+    <div class="hidden md:flex items-center pl-[40px]">
+      <GototopButton />
+    </div>
+
+    <!-- Mobile version: floating -->
+    <div class="block md:hidden">
+      <GototopButton class="fixed bottom-5 right-5 z-50" />
+    </div>
+</div>
+
     </section>
 </footer>   

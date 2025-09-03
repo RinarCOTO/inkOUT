@@ -7,58 +7,58 @@
 }
 @font-face {
   font-family: 'Optima';
-  src: url('/fonts/OptimaRoman.otf') format('opentype');
+  src: url('/inkout/fonts/OptimaRoman.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Optima Bold';
-  src: url('/fonts/OptimaBold.ttf') format('truetype');
+  src: url('/inkout/fonts/OptimaBold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Helvetica Neue';
-  src: url('/fonts/HelveticaNeue-Roman.otf') format('opentype');
+  src: url('/inkout/fonts/HelveticaNeue-Roman.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face{
   font-family: 'Gotham Medium';
-  src: url('/fonts/Gotham-Medium.woff') format('woff');
+  src: url('/inkout/fonts/Gotham-Medium.woff') format('woff');
 }
 @font-face {
   font-family: 'Gotham';
-  src: url('/fonts/Gotham-Regular.otf') format('opentype');
+  src: url('/inkout/fonts/Gotham-Regular.otf') format('opentype');
 }
 @font-face {
   font-family: 'Gotham Regular';
-  src: url('/fonts/Gotham-Regular.otf') format('opentype');
+  src: url('/inkout/fonts/Gotham-Regular.otf') format('opentype');
 }
 @font-face {
   font-family: 'Gotham Book';
-  src: url('/fonts/Gotham-Book.otf') format('opentype');
+  src: url('/inkout/fonts/Gotham-Book.otf') format('opentype');
 }
 @font-face {
   font-family: 'Helvetica Medium';
-  src: url('/fonts/HelveticaNeue-Medium.otf') format('opentype');
+  src: url('/inkout/fonts/HelveticaNeue-Medium.otf') format('opentype');
 }
 @font-face {
   font-family: 'Gotham Bold';
-  src: url('/fonts/GothamBold.otf') format('opentype');
+  src: url('/inkout/fonts/GothamBold.otf') format('opentype');
 }
 @font-face{
   font-family: 'Satoshi Black';
-  src: url('/fonts/SatoshiBlack.otf') format('opentype');
+  src: url('/inkout/fonts/SatoshiBlack.otf') format('opentype');
 }
 @font-face {
   font-family: 'Roboto Regular';
-  src: url('/fonts/RobotoRegular.ttf') format('truetype');
+  src: url('/inkout/fonts/RobotoRegular.ttf') format('truetype');
 }
 @font-face{
   font-family: 'Roboto Medium';
-  src: url('/fonts/RobotoMedium.ttf') format('truetype');
+  src: url('/inkout/fonts/RobotoMedium.ttf') format('truetype');
 }
 body{
   overflow-x: hidden;
@@ -89,6 +89,9 @@ body{
   font-size: 26px;
 }
 .font-roboto{
+  font-family: 'Roboto Regular';
+}
+.font-roboto-16{
   font-family: 'Roboto Regular';
   font-size: 16px;
 }
