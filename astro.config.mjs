@@ -7,7 +7,7 @@ import react from '@astrojs/react';
 
 // https://astro.build/config
 export default defineConfig({
-  // site: 'https://RinarCOTO.github.io',
+  site: 'https://RinarCOTO.github.io/inkout',
   base: '/inkout/',
   vite: {
     plugins: [tailwindcss()]
