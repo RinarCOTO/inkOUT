@@ -1,0 +1,15 @@
+name: Deploy Astro site to Pages
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: withastro/action@v2
+        with:
+          path: .
+          node-version: 20

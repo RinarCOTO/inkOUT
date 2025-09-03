@@ -13,7 +13,7 @@
 }
 @font-face {
   font-family: 'Optima Bold';
-  src: url('/fonts/OptimaBold.otf') format('opentype');
+  src: url('/fonts/OptimaBold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
@@ -54,7 +54,7 @@
 }
 @font-face {
   font-family: 'Roboto Regular';
-  src: url('./fonts/RobotoRegular.ttf') format('truetype');
+  src: url('/fonts/RobotoRegular.ttf') format('truetype');
 }
 @font-face{
   font-family: 'Roboto Medium';
