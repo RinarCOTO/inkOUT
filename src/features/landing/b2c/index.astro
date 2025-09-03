@@ -1,17 +1,33 @@
 ---
-import HeroSection from "./components/HeroSection.astro"
-import B2cSec2 from "./components/B2cSec2.astro"
-import ScienceThatMatters from "./components/ScienceThatMatters.astro"
-import WhyInkout from "./components/WhyInkout.astro"
-import PickYourPath from './components/PickYourPath.astro'
-import DotBg  from '../../../assets/images/DotBg.png'
+import { Image } from 'astro:assets';
+import HeroSection from "./components/HeroSection.astro";
+import B2cSec2 from "./components/B2cSec2.astro";
+import ScienceThatMatters from "./components/ScienceThatMatters.astro";
+import WhyInkout from "./components/WhyInkout.astro";
+import PickYourPath from './components/PickYourPath.astro';
+import DotBg from '../../../assets/images/DotBg.png';
 ---
+
 <div class="relative flex flex-col">
-  <img src={DotBg.src} alt="" class="absolute right-0 mt-[1332px] -z-10"/>
-    <HeroSection /> 
-    <B2cSec2 />
-    <ScienceThatMatters />
-    <WhyInkout />
-    <PickYourPath />
-    <slot />
+  <!-- Decorative background dot image (optimized PNG/WebP) -->
+  <Image 
+    src={DotBg} 
+    alt="" 
+    class="absolute right-0 mt-[1332px] -z-10" 
+    format="webp"
+  />
+
+  <HeroSection /> 
+  <B2cSec2 />
+  <ScienceThatMatters />
+  <WhyInkout />
+  <Image 
+    src={DotBg} 
+    alt="" 
+    class="absolute left-0 mt-[3394px] -z-10"
+    format="webp"
+  />
+
+  <PickYourPath />
+  <slot />
 </div>

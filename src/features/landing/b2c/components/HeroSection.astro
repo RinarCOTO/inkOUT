@@ -1,27 +1,35 @@
 ---
-import HeroBg from '../../b2c/assets/HeroBg.jpg'
+import { Image, Picture } from 'astro:assets';
+import HeroBg from '../../b2c/assets/HeroBg.jpg';
 import Button from '../../../../components/Button';
 import HeroLogo from '../../../../assets/images/HeroLogo.png';
-
 ---
-<section
-  class="h-[976px] bg-top bg-cover bg-no-repeat"
-  style={`background-image: url('${HeroBg.src}');`}
->
-  <div class="pl-[150px] mt-[255px]">
-    <img 
-      src={HeroLogo.src} 
+
+<section class="relative h-[976px]">
+  <!-- Background as a full-size Picture -->
+  <Picture 
+    src={HeroBg} 
+    alt="InkOut Hero Background"
+    formats={['avif', 'webp', 'jpg']}
+    widths={[1920, 1280, 768]} 
+    class="absolute inset-0 h-full w-full object-cover"
+  />
+
+  <!-- Overlay content -->
+  <div class="relative z-10 pl-[150px] mt-[255px]">
+    <Image 
+      src={HeroLogo} 
       alt="InkOut Brand Logo" 
-      class="max-w-[374px] max-h-[75px]"
+      class="max-w-[374px] max-h-[75px]" 
     />
-    
+
     <h1 class="text-[64px] leading-[70px] font-optima mt-[20px]">
       Transform Your Skin. <br />
       Reclaim Your Story.
     </h1>
     
     <p class="mt-[40px] font-helvetica text-[28px] max-w-[680px]">
-        The safe, natural and effective way to remove, revise, or replace your tattoo.
+      The safe, natural and effective way to remove, revise, or replace your tattoo.
     </p>
     
     <Button href="#" variant="secondary" className="max-w-[404px] uppercase mt-[33px]">

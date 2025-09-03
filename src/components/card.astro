@@ -1,17 +1,22 @@
 ---
+import { Picture } from 'astro:assets';
+
 const { img, title, text } = Astro.props;
 ---
 
 <div class="relative group max-w-[410px] max-h-[550px] rounded-[40px] overflow-hidden">
-  <img
-    src={img.src}
+  <Picture
+    src={img}
     alt={title}
+    formats={['avif', 'webp', 'jpg']}
+    widths={[400, 800]}
     class="w-full h-full object-cover"
   />
 
-<div class="absolute bottom-0 left-0 right-0 max-h-[231px] h-full bg-gradient-to-b from-transparent via-black/60 to-black transition-all duration-300 group-hover:h-[85px]"></div>
+  <!-- Gradient overlay -->
+  <div class="absolute bottom-0 left-0 right-0 max-h-[231px] h-full bg-gradient-to-b from-transparent via-black/60 to-black transition-all duration-300 group-hover:h-[85px]"></div>
 
-
+  <!-- Text overlay -->
   <div class="absolute bottom-6 left-6 right-6 text-left text-white z-10">
     <h3 class="capitalize">{title}</h3>
     <p class="group-hover:hidden font-roboto-medium">{text}</p>

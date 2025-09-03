@@ -1,29 +1,37 @@
 ---
-import Frog1 from '../../b2c/assets/Frog1.jpg';
-import Frog2 from '../../b2c/assets/Frog2.jpg';
-import Frog3 from '../../b2c/assets/Frog3.jpg';
-import Frog4 from '../../b2c/assets/Frog4.jpg';
+import { Picture } from 'astro:assets';
+import Frog1 from '../../b2c/assets/TatFrog1.jpg';
+import Frog2 from '../../b2c/assets/TatFrog2.jpg';
+import Frog3 from '../../b2c/assets/TatFrog3.jpg';
+import Frog4 from '../../b2c/assets/TatFrog4.jpg';
 ---
 <style>
-    .sec2-bg {
+  .sec2-bg {
     border-radius: 50px;
     background: #EBFCFF;
-    }
+  }
+  img {
+    border-radius: 16px;
+  }
 </style>
+
 <section class="py-[50px] px-[80px] flex flex-col gap-[50px]">
-    <div class="sec2-bg p-[50px]">
+  <div class="sec2-bg p-[50px]">
     <h2 class="font-bold mb-[33px]">New Skin, <span class="text-accent">New You</span></h2>
-        <div class="max-w-[1150px]">
-            <p class="font-book-regular leading-[38px]">Forget everything you know about tattoo removal. inkOUT is not a painful, expensive laser treatment that breaks ink into tiny fragments your body absorbs. We are the game-changers who actually get the ink OUT of your skin—naturally, safely, and in way fewer sessions—without lasers.</p>
-            <p class="font-book-regular leading-[38px] max-w-[1073px]">
-            <span class="font-gotham-medium text-accent">Here's the deal:</span> We use your body's own healing power to literally push the ink out through your skin. No fragmentation. No absorption into your lymph nodes. Just complete ink expulsion that you can actually see happening.</p>   
-        </div>
-        <div class="flex flex-row gap-[22.67px] mt-[50px]">
-        <img src={Frog1.src} alt="">
-        <img src={Frog2.src} alt="">
-        <img src={Frog3.src} alt="">
-        <img src={Frog4.src} alt="">
-        </div>
+    <div class="max-w-[1150px]">
+      <p class="font-book-regular leading-[38px]">
+        Forget everything you know about tattoo removal. inkOUT is not a painful, expensive laser treatment that breaks ink into tiny fragments your body absorbs. We are the game-changers who actually get the ink OUT of your skin—naturally, safely, and in way fewer sessions—without lasers.
+      </p>
+      <p class="font-book-regular leading-[38px] max-w-[1073px]">
+        <span class="font-gotham-medium text-accent">Here's the deal:</span> We use your body's own healing power to literally push the ink out through your skin. No fragmentation. No absorption into your lymph nodes. Just complete ink expulsion that you can actually see happening.
+      </p>   
     </div>
 
+    <div class="flex flex-row gap-[22.67px] mt-[50px]">
+      <Picture src={Frog1} alt="Tattoo Removal Example 1" formats={['avif', 'webp', 'jpg']} widths={[400, 800]} />
+      <Picture src={Frog2} alt="Tattoo Removal Example 2" formats={['avif', 'webp', 'jpg']} widths={[400, 800]} />
+      <Picture src={Frog3} alt="Tattoo Removal Example 3" formats={['avif', 'webp', 'jpg']} widths={[400, 800]} />
+      <Picture src={Frog4} alt="Tattoo Removal Example 4" formats={['avif', 'webp', 'jpg']} widths={[400, 800]} />
+    </div>
+  </div>
 </section>
