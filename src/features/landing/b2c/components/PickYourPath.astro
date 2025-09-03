@@ -1,0 +1,31 @@
+---
+import pyp1 from "../assets/pyp1.jpg";
+import pyp2 from "../assets/pyp2.jpg";
+import pyp3 from "../assets/pyp3.jpg";
+
+import PickYourPathCard from "../../../../components/card.astro";
+---
+
+<section class="text-center py-[100px] px-[80px]">
+  <h2>
+    Pick Your <span class="text-accent">Path</span>
+  </h2>
+
+  <div class="flex gap-[25px] mt-[70px ]">
+    <PickYourPathCard
+      img={pyp1}
+      title="Complete Removal"
+      text="Fresh start. Clean slate. Total transformation."
+    />
+    <PickYourPathCard
+      img={pyp2}
+      title="Fade for Cover-Up"
+      text="Lighten your tattoo for new ink with flexibility."
+    />
+    <PickYourPathCard
+      img={pyp3}
+      title="Selective Removal"
+      text="Target specific parts of your tattoo, not the whole thing."
+    />
+  </div>
+</section>

@@ -1,0 +1,24 @@
+---
+import { Image } from "astro:assets";
+
+// Props from parent
+const {
+  src,       
+  alt,       
+  class: className = "", 
+  formats = ["avif", "webp"], 
+  widths = [320, 640, 1024, 1920], 
+  loading = "lazy", 
+  decoding = "async"
+} = Astro.props;
+---
+
+<Image
+  src={src}
+  alt={alt}
+  format={formats}
+  widths={widths}
+  class={className}
+  loading={loading}
+  decoding={decoding}
+/>

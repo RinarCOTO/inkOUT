@@ -1,0 +1,43 @@
+.border-btn {
+  position: relative;
+  border-radius: 48px;
+  padding: 2px;
+  background: linear-gradient(180deg, #4DA7FF, #4DA7FF00);
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.border-btn-inner {
+  border-radius: 46px;
+  background: #DBEDFF;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.solid-btn {
+  font-family: 'Gotham Medium', sans-serif;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: 50px;
+  border-radius: 100px;
+  background: #4DA7FF;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0 24px;
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.solid-btn img {
+  width: 13px;
+  height: 13px;
+  object-fit: contain;
+}

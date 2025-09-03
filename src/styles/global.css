@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+@theme{
+  --color-secondary: #4DA7FF;
+  --color-accent: #00C6C5;
+  --color-blue: #2593FF;
+}
+@font-face {
+  font-family: 'Optima';
+  src: url('/fonts/OptimaRoman.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Optima Bold';
+  src: url('/fonts/OptimaBold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('/fonts/HelveticaNeue-Roman.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'Gotham Medium';
+  src: url('/fonts/Gotham-Medium.woff') format('woff');
+}
+@font-face {
+  font-family: 'Gotham';
+  src: url('/fonts/Gotham-Regular.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Gotham Regular';
+  src: url('/fonts/Gotham-Regular.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Gotham Book';
+  src: url('/fonts/Gotham-Book.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Helvetica Medium';
+  src: url('/fonts/HelveticaNeue-Medium.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Gotham Bold';
+  src: url('/fonts/GothamBold.otf') format('opentype');
+}
+@font-face{
+  font-family: 'Satoshi Black';
+  src: url('/fonts/SatoshiBlack.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Roboto Regular';
+  src: url('./fonts/RobotoRegular.ttf') format('truetype');
+}
+@font-face{
+  font-family: 'Roboto Medium';
+  src: url('/fonts/RobotoMedium.ttf') format('truetype');
+}
+body{
+  overflow-x: hidden;
+}
+.font-optima {
+  font-family: 'Optima', sans-serif;
+}
+.font-optima-bold{
+  font-family: 'Optima', sans-serif;
+  font-weight: bold;
+}
+.font-helvetica {
+  font-family: 'Helvetica Neue', sans-serif;
+}
+.font-gotham {
+  font-family: 'Gotham', sans-serif;
+}
+.font-gotham-medium{
+  font-family: 'Gotham Medium', sans-serif;
+  font-size: 26px;
+}
+.font-book-regular{
+  font-family: 'Gotham Book', sans-serif;
+  font-size: 26px;
+}
+.font-gotham-bold{
+  font-family: 'Gotham Bold';
+  font-size: 26px;
+}
+.font-roboto{
+  font-family: 'Roboto Regular';
+  font-size: 16px;
+}
+.font-roboto-medium{
+  font-family: 'Roboto Medium';
+}
+h2{
+  font-family: 'Helvetica Medium', sans-serif;
+  font-size: 64px;
+  font-weight: 500;
+}
+h3{
+  font-family: 'Satoshi Black';
+  color: var(--color-accent);
+  font-size: 28px;
+}
+p{
+  font-family: 'Gotham Book', sans-serif;
+  font-size: 26px;
+}
+
