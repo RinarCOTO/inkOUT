@@ -1,0 +1,45 @@
+---
+import ProcessCard from "../../../../components/card2.astro";
+
+import Process1 from '../../../../assets/images/process1.jpg';
+import Process2 from '../../../../assets/images/process2.jpg';
+import Process3 from '../../../../assets/images/process3.jpg';
+import Process4 from '../../../../assets/images/process4.jpg';
+---
+
+<section class="flex flex-col mx-auto pt-[100px] pb-[60px] px-[80px]">
+    <h2 class="mb-[30px] text-center">The <span class="text-accent">Process</span></h2>
+    <h3 class="font-optima text-[40px] leading-[38px] text-center">Here's Exactly what happens:</h3>
+    <div class="flex space-x-[30px] py-[60px]">
+    <ProcessCard 
+        img={Process1} 
+        step="1" 
+        title="No-Cost Consultation" 
+        text="We assess your ink and create your game plan" 
+    />
+    <ProcessCard 
+        img={Process2} 
+        step="2" 
+        title="Treatment Sessions" 
+        text="45-60 min each, spaced 8-12 weeks apart" 
+    />
+    <ProcessCard 
+        img={Process3} 
+        step="3" 
+        title="Natural Healing" 
+        text="Watch your transformation happen session by session" 
+    />
+    <ProcessCard 
+    img={Process4}
+    step="4"
+    title="Visible Progress">
+    Your body forms scabs <br /> that contain the expelled ink
+    </ProcessCard>
+
+    </div>
+    <div class="font-book-regular text-[26px] leading-[38px]">
+    <p><span class="text-accent font-gotham-medium">Heads up:</span> You'll get scabs, not scars. It's not pretty, but it's proof the ink is leaving your body. Follow our aftercare religiously and stay in touch with your technician.</p>
+    <p>This isn't a "set it and forget it" process—but the baby skin results are worth it.</p>
+    </div>
+
+</section>

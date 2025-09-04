@@ -77,39 +77,29 @@ body{
   font-family: 'Gotham', sans-serif;
 }
 .font-gotham-medium{
-  font-family: 'Gotham Medium', sans-serif;
-  font-size: 26px;
+  font-family: 'Gotham Medium', sans-serif; 
 }
 .font-book-regular{
   font-family: 'Gotham Book', sans-serif;
-  font-size: 26px;
 }
 .font-gotham-bold{
   font-family: 'Gotham Bold';
-  font-size: 26px;
 }
 .font-roboto{
   font-family: 'Roboto Regular';
 }
 .font-roboto-16{
   font-family: 'Roboto Regular';
-  font-size: 16px;
 }
 .font-roboto-medium{
   font-family: 'Roboto Medium';
+}
+.font-satoshi{
+  font-family: 'Satoshi Black';
 }
 h2{
   font-family: 'Helvetica Medium', sans-serif;
   font-size: 64px;
   font-weight: 500;
-}
-h3{
-  font-family: 'Satoshi Black';
-  color: var(--color-accent);
-  font-size: 28px;
-}
-p{
-  font-family: 'Gotham Book', sans-serif;
-  font-size: 26px;
 }
 

@@ -1,0 +1,47 @@
+---
+import { Picture } from "astro:assets";
+
+const { img, step, title, text } = Astro.props;
+---
+
+<style>
+  .card-2 {
+    border-radius: 30px;
+    background: #E5FBFF;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(40px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-2:hover {
+    transform: translateY(-12px); /* lifts upward */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2); /* stronger shadow */
+  }
+</style>
+
+<div class="flex max-h-[325px] max-w-[300px]">
+  <div class="card-2">
+    <Picture 
+      src={img} 
+      alt={title} 
+      class="max-h-[150px] w-full object-cover rounded-t-[30px]" 
+      formats={['avif','webp','jpg']} 
+    />
+    <div class="mt-[34px] px-[25px] pb-[24px]">
+      <h4 class="font-gotham-bold font-bold text-[20px] leading-[30px]">
+        {step}. {title}
+      </h4>
+
+      <!-- If text is provided, show it. Otherwise, render slot -->
+      {text ? (
+        <p class="font-book-regular text-[20px] leading-[30px] whitespace-pre-line">
+          {text}
+        </p>
+      ) : (
+        <p class="font-book-regular text-[20px] leading-[30px]">
+          <slot />
+        </p>
+      )}
+    </div>
+  </div>
+</div>

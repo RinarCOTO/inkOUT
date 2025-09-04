@@ -6,6 +6,7 @@ import ScienceThatMatters from "./components/ScienceThatMatters.astro";
 import WhyInkout from "./components/WhyInkout.astro";
 import PickYourPath from './components/PickYourPath.astro';
 import DotBg from '../../../assets/images/DotBg.png';
+import TheProcess from './components/TheProcess.astro';
 ---
 
 <div class="relative flex flex-col">
@@ -24,10 +25,11 @@ import DotBg from '../../../assets/images/DotBg.png';
   <Image 
     src={DotBg} 
     alt="" 
-    class="absolute left-0 mt-[3394px] -z-10"
+    class="absolute left-0 mt-[3394px] scale-x-[-1]  -z-10"
     format="webp"
   />
 
-  <PickYourPath />
+  <PickYourPath/>
+  <TheProcess />
   <slot />
 </div>
