@@ -1,17 +1,11 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
-
-import tailwindcss from '@tailwindcss/vite';
-
+import tailwind from '@astrojs/tailwind';
 import react from '@astrojs/react';
 
-// https://astro.build/config
 export default defineConfig({
-  site: 'https://RinarCOTO.github.io/inkout/#', //temporary fix
-  base: '/inkout/',
-  vite: {
-    plugins: [tailwindcss()]
-  },
+  site: 'https://RinarCOTO.github.io',
+  base: '/inkOUT/',
+  integrations: [tailwind(), react()]
+});
 
-  integrations: [react()]
-}); 
